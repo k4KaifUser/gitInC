@@ -154,12 +154,55 @@ Lab Task
 
 
 
+----------------------------------------------Interview Question-----------------------------------------------------
 
 
 
+============================
+what is git slash
+============================
 
 
+it is used to save working tree changes in a backup and make working tree clean.
 
+========================================
+Q) how to remove git local commits
+========================================
+
+=> Using git reset command we can undo local commits
+
+=> Git Reset we can do in 2 ways
+
+        a) soft reset
+        b) hard reset
+
+=> soft reset means only local commit will be deleted and file changes will be there in staging area.
+
+        Ex : git reset --soft HEAD~1
+
+=> hard reset means local commit will be deleted and file changes also will be deleted from working tree.
+
+        Ex : git reset --hard HEAD~1
+
+=============================
+Q) what is git cherry-pick
+=============================
+
+=> When we use 'git merge' command by default all commits will merge from one branch to another branch.
+
+=> If we want to merge specific commit from one branch to another branch then we can use 'git cherry-pick'.
+
+Ex : git cherry-pick <commit-id>
+
+=================================================
+Q) how to revert git central repo commits
+=================================================
+
+=> Using 'git revert' command we can revert code changes from central repo.
+
+Ex : git revert <commit-id>
+
+Note: After git revert execution we need execute git push.
 
 
 
